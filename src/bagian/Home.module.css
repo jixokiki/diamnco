@@ -6,7 +6,7 @@
 .navbarDisabled {
     pointer-events: none;
     opacity: 0.5;
-    z-index: 0; /* Lower the z-index to ensure it's under the popup */
+    z-index: 0;
 }
 
 .popup {
@@ -19,31 +19,79 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Ensure popup is on top */
+    z-index: 1000;
 }
 
 .popupContent {
-    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .popupContent h3 {
     margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
 .popupContent button {
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     background-color: #007bff;
     color: white;
     cursor: pointer;
+    font-size: 1em;
 }
 
 .popupContent button:hover {
     background-color: #0056b3;
+}
+
+.layar {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
